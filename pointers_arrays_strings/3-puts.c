@@ -13,7 +13,7 @@
 
 
 void _puts(char *str){
-    fprintf( stdout, str );
-    fprintf( stdout, "\n" );
-
+    printf( stdout, str );
+    printf( stdout, "\n" );
+    return
 }
