@@ -1,7 +1,10 @@
 
 #include <stdio.h>
 /**
- * rest to 98 - check the code
+ * reset_to_98 - Entry point
+ *
+ * Descritption: 'pointe a 98'
+ * @n: is a pointer
  *
  * Return.
  */
