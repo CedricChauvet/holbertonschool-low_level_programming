@@ -14,7 +14,7 @@
 
 void _puts(char *str)
 {
-fprintf( stdout, "%s", str);
-fprintf(stdout, "\n");
+write(1,str,strlen(str));
+write(1, "\n", 2);
 return;
 }
