@@ -10,9 +10,9 @@
  */
 
 
-int _strlen(char *s)
+long long int _strlen(char *s)
 {
-long int len = 0;
-len = sizeof(s)+2;
+long long int len = 0;
+len = sizeof(s) + 2;
 return len;
 }
