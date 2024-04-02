@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 /**
  * _strlen - Entry point
  *
@@ -9,9 +10,9 @@
  */
 
 
-int _strlen(char s1[])
+int _strlen(char *s)
 {
 int len = 0;
-len = strlen(s1); 
-return len;   
+len = strlen(s);
+return len;
 }
