@@ -4,9 +4,9 @@
  * _strlen - Entry point
  *
  * Descritption: 'swap a with b'
- * @s1: is an string
+ * @s: is an string
  *
- * Return.
+ * Return len
  */
 
 
