@@ -3,8 +3,8 @@
  * swap_int - Entry point
  *
  * Descritption: 'swap a with b'
- * @a: is a pointer
- * @b: is a pointer
+ * @a: is an address
+ * @b: is a address
  *
  * Return.
  */
@@ -12,7 +12,9 @@
 
 void swap_int(int *a, int *b)
 {
-int c = &a;
-*b = &a;
+int c;
+c = *a;
+*a = *b;
 *a = c;
+return;
 }
