@@ -6,15 +6,16 @@
  * Descritption: 'swap a with b'
  * @s: is an string
  *
- * Return len
+ * Return: long int.
  */
 
 
 long int _strlen(char *s)
 {
 long int len = 0;
-while(s[len] != '\0'){
-    len++;
+while (s[len] != '\0')
+{
+len++;
 }
-return len;
+return (len);
 }
