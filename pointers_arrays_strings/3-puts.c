@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <string.h>
 /**
@@ -8,13 +9,14 @@
  *
  * Return: .
  */
-
-
-
-
 void _puts(char *str)
 {
-write(1,str,strlen(str));
-write(1, "\n", 2);
-return;
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
 }
