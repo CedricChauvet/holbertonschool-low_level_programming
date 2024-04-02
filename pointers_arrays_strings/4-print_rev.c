@@ -33,7 +33,7 @@ return (len);
  */
 void print_rev(char *str)
 {
-	int i = _strlen(str);
+	int i = _strlen(str) - 1;
 
 	while (i >= 0)
 	{
