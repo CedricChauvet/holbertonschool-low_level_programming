@@ -12,8 +12,9 @@
 
 
 
-void _puts(char *str){
-    printf( str );
-    printf( "\n" );
-    return;
+void _puts(char *str)
+{
+printf(str);
+printf("\n");
+return;
 }
