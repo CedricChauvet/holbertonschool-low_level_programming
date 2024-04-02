@@ -10,9 +10,11 @@
  */
 
 
-long _strlen(char *s)
+long int _strlen(char *s)
 {
-long len = 0;
-len = sizeof(*s);
+long int len = 0;
+while(string[len] != 0){
+    len++;
+}
 return len;
 }
