@@ -10,9 +10,9 @@
  */
 
 
-int _strlen(char s[])
+int _strlen(char *s)
 {
 int len = 0;
-len = sizeof(s[]);
+len = sizeof(s) / sizeof(s[0]);
 return len;
 }
