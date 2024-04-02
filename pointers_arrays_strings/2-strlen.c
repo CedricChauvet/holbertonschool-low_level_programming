@@ -13,6 +13,6 @@
 long _strlen(char *s)
 {
 long len = 0;
-len = sizeof(s);
+len = sizeof(*s);
 return len;
 }
