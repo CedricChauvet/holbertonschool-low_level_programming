@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 /**
- * rest to 98 - check the code 
+ * rest to 98 - check the code
  *
  * Return.
  */
