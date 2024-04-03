@@ -25,7 +25,8 @@ return (len);
 
 void strcpy_custom(char *dest, const char *src)
 	{
-	while ((*dest++ = *src++) != '\0');
+	while ((*dest++ = *src++) != '\0')
+		;
 	}
 
 /**
@@ -43,7 +44,6 @@ void rev_string(char *str)
 	int j = 0;
 	char *rev_str = (char *) malloc((length - 1) * sizeof(char));
 	int i = length - 1;
-
 	while (j < length)
 	{
 	   rev_str[j] = str[i];
