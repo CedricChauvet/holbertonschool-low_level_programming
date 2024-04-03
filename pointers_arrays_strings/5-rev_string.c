@@ -37,16 +37,16 @@ void rev_string(char *str)
 {
 	int length = _strlen(str);
 	int j = 0;
-	
-    char *rev_str = (char *) malloc((length - 1) * sizeof(char));
-    int i = length - 1;
-	while (j < length - 1)
+	char *rev_str = (char *) malloc((length - 1) * sizeof(char));
+	int i = length - 1;
+
+	while (j < length)
 	{
 	   rev_str[j] = str[i];
-       j++;
-       i--;
+	j++;
+	i--;
 	}
 
-    *str = *rev_str;
-    rev_str[j] = '\0';
+	strcpy(str, rev_str);
+	rev_str[j] = '\0';
 }
