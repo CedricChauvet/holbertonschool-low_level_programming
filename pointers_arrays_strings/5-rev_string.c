@@ -23,6 +23,10 @@ len++;
 return (len);
 }
 
+void strcpy_custom(char *dest, const char *src)
+	{
+	while ((*dest++ = *src++) != '\0');
+	}
 
 /**
 * rev_string - Entry point
@@ -45,10 +49,6 @@ void rev_string(char *str)
 	   rev_str[j] = str[i];
 	j++;
 	i--;
-	}
-	void strcpy_custom(char *dest, const char *src)
-	{
-	while ((*dest++ = *src++) != '\0')
 	}
 	rev_str[j] = '\0';
 	strcpy_custom(str, rev_str);
