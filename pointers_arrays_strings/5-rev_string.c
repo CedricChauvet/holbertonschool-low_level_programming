@@ -23,6 +23,15 @@ len++;
 return (len);
 }
 
+/**
+* strcpy_custom - Entry point
+*
+* Descritption: 'swap a with b'
+* @dest: is an string
+* @src: is an string
+* Return: .
+*/
+
 void strcpy_custom(char *dest, const char *src)
 	{
 	while ((*dest++ = *src++) != '\0')
@@ -44,11 +53,12 @@ void rev_string(char *str)
 	int j = 0;
 	char *rev_str = (char *) malloc((length - 1) * sizeof(char));
 	int i = length - 1;
+
 	while (j < length)
 	{
-	   rev_str[j] = str[i];
-	j++;
-	i--;
+		rev_str[j] = str[i];
+		j++;
+		i--;
 	}
 	rev_str[j] = '\0';
 	strcpy_custom(str, rev_str);
