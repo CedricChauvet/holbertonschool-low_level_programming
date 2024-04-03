@@ -46,7 +46,10 @@ void rev_string(char *str)
 	j++;
 	i--;
 	}
-
-	strcpy(str, rev_str);
+	void strcpy_custom(char *dest, const char *src)
+	{
+	while ((*dest++ = *src++) != '\0')
+	}
 	rev_str[j] = '\0';
+	strcpy_custom(str, rev_str);
 }
