@@ -53,6 +53,7 @@ void rev_string(char *str)
 	int j = 0;
 	char *rev_str = (char *) malloc((length - 1) * sizeof(char));
 	int i = length - 1;
+
 	if (length == 0)
 	{
 		return;
@@ -62,7 +63,7 @@ void rev_string(char *str)
 		rev_str[j] = str[i];
 		j++;
 		i--;
-	}	  
+	}
 	rev_str[j] = '\0';
 	strcpy_custom(str, rev_str);
 }
