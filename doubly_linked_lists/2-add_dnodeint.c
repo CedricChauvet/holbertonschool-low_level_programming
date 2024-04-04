@@ -15,23 +15,22 @@
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 
-	struct dlistint_t *newNode;
-	newNode = (&head);
-
+	
+	dlistint_t **newNode = head;
 	if( (*head) == NULL)
 	{
-		newNode->n = n;
-		newNode->next = NULL;
-		newNode->prev = NULL;
+		(*newNode)->n = n;
+		(*newNode)->next = NULL;
+		(*newNode)->prev = NULL;
 	}
 	
 	else
 	{
 
-		newNode->n = n;
-		(*head)->next = newNode;
-    	newNode->prev = (*head);
-		printf("%d  ", newNode->n);
+		(*newNode)->n = n;
+		(*head)->next = (*newNode);
+    	(*newNode)->prev = (*head);
+		printf("%d  ", (*newNode)->n);
 	}
-	return (newNode);
+	return (0);
 }
