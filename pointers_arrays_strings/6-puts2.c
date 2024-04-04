@@ -38,7 +38,7 @@ void puts2(char *s)
 	int i = 0;
 
 	while (*s != '\0')
-    {
+	{
 		if (i % 2 == 0)
 		{
 			_putchar(*s);
