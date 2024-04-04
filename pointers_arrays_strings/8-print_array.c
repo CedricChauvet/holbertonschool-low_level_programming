@@ -42,11 +42,8 @@ void print_array(int *a, int n)
 		{
 			printf(", ");
 		}
-		if (n == 1)
-		{
-			printf("\n");
-		}
 		a++;
 		n--;
 	}
+	printf('\n');
 }
