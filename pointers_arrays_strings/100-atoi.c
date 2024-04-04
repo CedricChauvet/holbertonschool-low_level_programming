@@ -61,6 +61,5 @@ int _atoi(char *s)
 	{
 		atoi = -1 * atoi;
 	}
-	printf("nbr de moins %d\n", minus);
 	return (atoi);
 }
