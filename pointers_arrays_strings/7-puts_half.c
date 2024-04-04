@@ -27,7 +27,7 @@ return (len);
 * puts_half - Entry point
 *
 * Descritption: 'print un caracter sur 2'
-* @s: is an string
+* @str: is an string
 *
 * Return:.
 */
@@ -36,9 +36,10 @@ void puts_half(char *str)
 {
 	int i = 0;
 	int len = _strlen(str);
+
 	while (*str != '\0')
 	{
-		if (i <= (len -1) / 2)
+		if (i <= (len - 1) / 2)
 			;
 		else
 		{
