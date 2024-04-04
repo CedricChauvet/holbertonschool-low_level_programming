@@ -40,7 +40,7 @@ int _atoi(char *s)
 	int temp;
 	unsigned int atoi = 0;
 	int minus = 0;
-	int flag=0;
+	int flag = 0;
 
 	while (len > 0)
 	{
@@ -52,7 +52,7 @@ int _atoi(char *s)
 			atoi = atoi + temp;
 			flag = 1;
 		}
-		if (flag == 1 && ( temp < 0 || temp >9) )
+		if (flag == 1 && (temp < 0 || temp > 9))
 		{
 			break;
 		}
