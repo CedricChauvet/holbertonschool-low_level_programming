@@ -12,9 +12,9 @@
 * Return: long int.
 */
 
-long int _strlen(char *s)
+int _strlen(char *s)
 {
-long int len = 0;
+int len = 0;
 
 while (s[len] != '\0')
 {
@@ -56,7 +56,6 @@ void rev_string(char *str)
 	if (length == 0)
 	{
 		return;
-	
 	}
 	while (j < length)
 	{
