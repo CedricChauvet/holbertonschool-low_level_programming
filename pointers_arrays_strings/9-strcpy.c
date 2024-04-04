@@ -35,17 +35,18 @@ return (len);
 * Return:a char
 */
 
+
 char *_strcpy(char *dest, char *src)
 	{
-	size_t i;
+	int i = 0;
 	int len = _strlen(src);
-	while (len > 0)
+
+	while (i <= len)
 	{
 		dest[i] = src[i];
 		i++;
-		len--;
 	}
-
-	dest[i + 1] = '\0';
+	i++;
+	dest[i] = '\0';
 	return (dest);
 }
