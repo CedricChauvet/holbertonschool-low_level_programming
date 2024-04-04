@@ -45,5 +45,5 @@ void print_array(int *a, int n)
 		a++;
 		n--;
 	}
-	printf('\n');
+	printf("\n");
 }
