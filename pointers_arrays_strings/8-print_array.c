@@ -28,6 +28,7 @@ return (len);
 *
 * Descritption: 'print un caracter sur 2'
 * @*a: is an integer
+* @a: is an integer
 * @n: is an integer
 *
 * Return:.
