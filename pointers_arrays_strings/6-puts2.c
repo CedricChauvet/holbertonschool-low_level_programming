@@ -46,4 +46,5 @@ void puts2(char *s)
 		s++;
 		i++;
 	}
+	_putchar('\n');
 }
