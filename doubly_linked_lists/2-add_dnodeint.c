@@ -12,30 +12,26 @@
 * Return: int number of nodes.
 */
 
-
-
-dlistint_t *newNode;
-	
-	
-newNode->n = n;
-newNode->prev = NULL;
-newNode->next = NULL;
-
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 
-	if( head == NULL)
+	struct dlistint_t *newNode;
+	newNode = (&head);
+
+	if( (*head) == NULL)
 	{
-		**head = *newNode;
+		newNode->n = n;
+		newNode->next = NULL;
+		newNode->prev = NULL;
 	}
 	
 	else
 	{
-		(*head)->n = n;
-		(*head)->prev = newNode;
-    	newNode->next = (*head);
-    	**head = *newNode;
-		printf("%d", (*head)->n);
+
+		newNode->n = n;
+		(*head)->next = newNode;
+    	newNode->prev = (*head);
+		printf("%d  ", newNode->n);
 	}
-	return (*head);
+	return (newNode);
 }
