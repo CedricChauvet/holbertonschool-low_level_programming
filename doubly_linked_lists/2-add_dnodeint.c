@@ -34,5 +34,5 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		*head = newNode;
 		return (newNode);
 	}
-	
+	free(newNode);
 }
