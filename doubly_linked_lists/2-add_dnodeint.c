@@ -19,8 +19,6 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	
 	if (*head == NULL)
 	{
-		printf("toto\n");
-		fflush(stdout);
 		(newNode)->n = n;
 		(newNode)->next = NULL;
 		(newNode)->prev = NULL;
@@ -34,5 +32,6 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		(*head)->prev = newNode;
 		*head = newNode;
 	}
+
 	return (0);
 }
